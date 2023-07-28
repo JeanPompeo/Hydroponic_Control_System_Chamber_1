@@ -1,0 +1,18 @@
+- These codes have been modified to better fit the data output for "load_data_v3"
+- python code that outputs all data in python serial monitor to be copied by hand
+- onto a text file and then resaved as .csv file
+
+1st Board : Thermocouple_Array 		| Com 5
+2nd Board : Temp_Hum_I2C 		| Com 4
+3rd Board : Mult_CO2_Sensors		| Com 6 
+4th Board : 8_LNSSensors_1-2		| Com 10 
+5th Board : 8_LNSSensors_3-4		| Com 9 
+6th Board : Human Bean Counter		| Com 8
+
+** "Human Bean Counter" is a "ESP32 Dev Module" board type Upload speed : 921600
+** "Mult_CO2_Sensors" is set to 19200 Baud 
+
+- RTC module is connected to 1st board
+- Delay() function will be used to make each board run once every set time interval
+- 6th board should not have ";" printed after the final data line so as to end the data transmission
+
